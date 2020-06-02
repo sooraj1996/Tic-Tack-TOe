@@ -1,0 +1,149 @@
+from IPython.display import clear_output
+clear_output()
+def display_board(board):
+    print("  |   |  ")
+    print(board[7]+' | '+board[8]+' | '+board[9])
+    print("__|___|__")
+    print("  |   |  ")
+    print(board[4]+' | '+board[5]+' | '+board[6])
+    print("__|___|__")
+    print("  |   |  ")
+    print(board[1]+' | '+board[2]+' | '+board[3])
+    print("  |   |  ")
+print("Welcome to Tic Tac Toe !")
+marker=' '
+while marker!='o' and marker!='x':
+    marker= input(" player_1 choose 'x' or 'o' ")
+    player_1=marker
+    if player_1=='x':
+        player_2='o'
+    else:
+        player_2='x'  
+test_board=['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+j=1
+display_board(test_board)
+while j<=9:
+    i=int(input("player 1: "))
+    if player_1=='x':
+        test_board[i]='x'
+        clear_output()
+        display_board(test_board)
+        if test_board[1]=='x' and test_board[2]=='x' and test_board[3]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[1]=='x' and test_board[4]=='x' and test_board[7]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[1]=='x' and test_board[5]=='x' and test_board[9]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[2]=='x' and test_board[5]=='x' and test_board[8]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[3]=='x' and test_board[6]=='x' and test_board[9]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[3]=='x' and test_board[5]=='x' and test_board[7]=='x':
+            print("player 1 won the match") 
+            break
+        elif test_board[4]=='x' and test_board[5]=='x' and test_board[6]=='x':
+            print("player 1 won the match")
+            break
+        elif test_board[7]=='x' and test_board[8]=='x' and test_board[9]=='x':
+            print("player 1 won the match")
+            break
+    else:
+        test_board[i]='o'
+        clear_output()
+        display_board(test_board)
+        if test_board[1]=='o' and test_board[2]=='o' and test_board[3]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[1]=='o' and test_board[4]=='o' and test_board[7]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[1]=='o' and test_board[5]=='o' and test_board[9]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[2]=='o' and test_board[5]=='o' and test_board[8]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[3]=='o' and test_board[6]=='o' and test_board[9]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[3]=='o' and test_board[5]=='o' and test_board[7]=='o':
+            print("player 1 won the match") 
+            break
+        elif test_board[4]=='o' and test_board[5]=='o' and test_board[6]=='o':
+            print("player 1 won the match")
+            break
+        elif test_board[7]=='o' and test_board[8]=='o' and test_board[9]=='o':
+            print("player 1 won the match")
+            break
+    j=j+1
+    if j>9:
+        break
+    else:
+         i=int(input("player 2: "))
+    if player_2=='x':
+        test_board[i]='x'
+        clear_output()
+        display_board(test_board)
+        if test_board[1]=='x' and test_board[2]=='x' and test_board[3]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[1]=='x' and test_board[4]=='x' and test_board[7]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[1]=='x' and test_board[5]=='x' and test_board[9]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[2]=='x' and test_board[5]=='x' and test_board[8]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[3]=='x' and test_board[6]=='x' and test_board[9]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[3]=='x' and test_board[5]=='x' and test_board[7]=='x':
+            print("player 2 won the match") 
+            break
+        elif test_board[4]=='x' and test_board[5]=='x' and test_board[6]=='x':
+            print("player 2 won the match")
+            break
+        elif test_board[7]=='x' and test_board[8]=='x' and test_board[9]=='x':
+            print("player 2 won the match")
+            break
+    else:
+        test_board[i]='o'
+        clear_output()
+        display_board(test_board)
+        if test_board[1]=='o' and test_board[2]=='o' and test_board[3]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[1]=='o' and test_board[4]=='o' and test_board[7]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[1]=='o' and test_board[5]=='o' and test_board[9]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[2]=='o' and test_board[5]=='o' and test_board[8]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[3]=='o' and test_board[6]=='o' and test_board[9]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[3]=='o' and test_board[5]=='o' and test_board[7]=='o':
+            print("player 2 won the match") 
+            break
+        elif test_board[4]=='o' and test_board[5]=='o' and test_board[6]=='o':
+            print("player 2 won the match")
+            break
+        elif test_board[7]=='o' and test_board[8]=='o' and test_board[9]=='o':
+            print("player 2 won the match")
+            break
+    j=j+1
+print("game over !")
+
+    
+
+        
